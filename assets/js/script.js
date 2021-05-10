@@ -72,7 +72,7 @@ function checkAnswer() {
 	} else {
 		alert(
 			//important to use backticks as quotations can be rather confusing
-			`Sorry ${userAnswer} is wrong. The correct answer was ${calculatedAnswer[0]}!`
+			`So close but ${userAnswer} is wrong. The correct answer was ${calculatedAnswer[0]}!`
 		);
 		incrementWrongAnswer();
 	}
