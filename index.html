@@ -23,11 +23,10 @@
 		<title>Love Maths Game</title>
 	</head>
 	<body>
-		<h1 class="heading">
-			<img class="logo" src="./assets/images/logo.png" alt="logo" />
-		</h1>
-
 		<div class="game-area">
+			<h1 class="heading">
+				<img class="logo" src="./assets/images/logo.png" alt="logo" />
+			</h1>
 			<div class="controls-area">
 				<button data-type="addition" class="btn btn--big btn--green">
 					<i class="fas fa-plus"></i>
@@ -46,16 +45,15 @@
 				<span id="operand1">0</span>
 				<span id="operator">x</span>
 				<span id="operand2">0</span>
-				<span>=</span>
-				<p class="answer-message">Enter Answer:</p>
-				<input type="number" id="answer-box" />
+				<div>
+					<input type="number" id="answer-box" placeholder="=" />
+				</div>
 			</div>
 			<button data-type="submit" class="btn btn--gray">Submit Answer</button>
-		</div>
-
-		<div class="score-area">
-			<p class="cores">Correct Answer <span id="score">0</span></p>
-			<p class="cores">Incorrect Answers <span id="incorrect">0</span></p>
+			<div class="score-area">
+				<p class="cores">Correct Answer <span id="score">0</span></p>
+				<p class="cores">Incorrect Answers <span id="incorrect">0</span></p>
+			</div>
 		</div>
 
 		<script src="./assets/js/script.js"></script>
